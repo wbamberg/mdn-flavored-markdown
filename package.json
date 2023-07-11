@@ -1,13 +1,13 @@
 {
   "name": "mdn-markdown",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MPL-2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && cp -a lib/localizations dist/localizations"
   },
   "dependencies": {
     "front-matter": "^4.0.2",
